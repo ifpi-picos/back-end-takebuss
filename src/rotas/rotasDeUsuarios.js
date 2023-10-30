@@ -1,6 +1,8 @@
 import Express from 'express';
+import {PrismaClient} from '@prisma/client'
 
 const router = Express.Router();
+const prisma = new PrismaClient();
 
 router.get('/', (req, res) => {
   res.send('Get usuários.');
