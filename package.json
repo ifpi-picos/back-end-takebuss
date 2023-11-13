@@ -1,7 +1,23 @@
 {
-  "name": "takebuss",
-  "version": "1.0.0",
-  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/z6zdaKJM) # express-starter",
-  "main": "app.js",
-  "homepage": "https://github.com/ifpi-picos/back-end-takebuss#readme"
+  "name": "express-starter",
+  "version": "1.0.022",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "prisma": "^5.5.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "type": "module"
 }
