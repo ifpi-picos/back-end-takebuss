@@ -8,20 +8,21 @@ generator client {
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
+  shadowDatabaseUrl = env("SHADOW_DATABASE_URL")
 }
 
-model Colaborador {
+model Usuario {
   id    Int     @id @default(autoincrement())
   email String  @unique
   nome  String
   senha String
-  @@map("colaboradores")
+  
+ 
+
+  @@map("usuarios")
 }
 
-model Passageiro {
-  id    Int     @id @default(autoincrement())
-  email String  @unique
-  nome  String
-  senha String
-  @@map("passageiros")
-}
+
+
+
+// npx prisma migrate dev 
