@@ -14,7 +14,7 @@ router.post('/', async (req, res) => {
     await prisma.usuario.create({
       data: usuario,
     });
-    res.status(201).send('Usuário salvo com sucesso!');
+    res.status(201).send('Usuário lvo com sucesso!');
   } catch (erro) {
     console.error(erro);
     res.status(400).send('erro ao salvar usuario!');
