@@ -1,7 +1,7 @@
-  {
+{
   "name": "express-starter",
-  "version": "1.0.022",
-  "description": "",
+  "version": "1.0.22",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/z6zdaKJM)\r # express-starter",
   "main": "index.js",
   "scripts": {
     "start": "nodemon src/app.js",
@@ -11,8 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^22.0.1",
     "nodemon": "^3.0.1",
-    "prisma": "^5.7.0"
+    "prisma": "^5.17.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "@prisma/client": "^5.6.0",
