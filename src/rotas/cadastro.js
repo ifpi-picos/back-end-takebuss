@@ -10,11 +10,14 @@ router.post('/', async (req, res) => {
     const { nome } = req.body;
     const { email } = req.body;
     const { senha } = req.body;
-    const usuario = { nome, email, senha: criptografaSenha(senha) };
+    const senhaCriptografada = criptografaSenha(senha);
+    
+    const usuario = { nome, email, senha: senhaCriptografada };
+
     await prisma.usuario.create({
       data: usuario,
     });
-    res.status(201).send('Usuário lvo com sucesso!');
+    res.status(201).send('Usuário salvo com sucesso!');
   } catch (erro) {
     console.error(erro);
     res.status(400).send('erro ao salvar usuario!');
