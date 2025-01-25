@@ -15,8 +15,8 @@ model Usuario {
   id    Int     @id @default(autoincrement())
   email String  @unique
   nome  String
-  senha String  @unique
-  nascimento DateTime @updatedAt
+  senha String  
+  
   @@map("usuarios")
 }
 // npx prisma migrate dev 
