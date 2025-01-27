@@ -18,8 +18,10 @@ router.post('/', async (req, res) => {
       data: usuario,
     });
     res.status(201).send('Usuário salvo com sucesso!');
+    console.log("pronto")
   } catch (erro) {
     console.error(erro);
+    console.log("Erro");
     res.status(400).send('erro ao salvar usuario!');
   }
 });
